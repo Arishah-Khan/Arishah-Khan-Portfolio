@@ -26,14 +26,13 @@ const poppins = Poppins({
 
 export default function Navbar() {
     return (
-        <header className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center bg-[#ebeae9] pr-3 py-2 md:px-6 shadow-md hover:shadow-lg transition-shadow duration-300 ${rubik.className}`}>
-            {/* Logo Section */}
+        <header id="home" className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center bg-[#ebeae9] pr-3 py-2 md:px-6 shadow-md hover:shadow-lg transition-shadow duration-300 ${rubik.className}`}>
+            
             <div>
                 <Image src="/images/logo1.png" alt="logo" width="80" height="80" />
             </div>
 
-            {/* Navigation for Desktop */}
-            <nav className="hidden md:flex"> {/* Show on desktop */}
+            <nav className="hidden md:flex"> 
                 <ul className="flex space-x-6">
                     {["Home", "About", "Projects", "Contact"].map((item) => (
                         <li key={item}>
@@ -49,7 +48,6 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            {/* Hamburger Menu for Mobile */}
             <div className="relative md:hidden">
                 <Sheet>
                      
@@ -91,16 +89,13 @@ export default function Navbar() {
                                 </li>
                             ))}
                         </ul>
-                        {/* Social Media Icons */}
                         <div className="flex justify-center w-1/2 mx-auto py-4 space-x-4">
-                            {/* LinkedIn Icon */}
                             <div className="relative flex items-center justify-center w-8 h-8 bg-black text-white rounded-full hover:bg-[#0077B5] transition-colors duration-300 group">
                                 <Link href="https://www.linkedin.com/in/arishah-khan-b606092b8/" aria-label="LinkedIn" className="flex items-center justify-center">
                                     <FaLinkedinIn size={20} />
                                 </Link>
                             </div>
 
-                            {/* GitHub Icon */}
                             <div className="relative flex items-center justify-center w-8 h-8 bg-black text-white rounded-full hover:bg-[#181717] transition-colors duration-300 group">
                                 <Link href="https://github.com/Arishah-Khan" aria-label="GitHub" className="flex items-center justify-center">
                                     <FaGithub size={20} />
@@ -111,7 +106,6 @@ export default function Navbar() {
                 </Sheet>
             </div>
 
-            {/* Social Media Icons for Desktop */}
             <div className="hidden md:flex space-x-4">
                 <div className="relative flex items-center justify-center w-8 h-8 bg-black text-white rounded-full hover:bg-[#0077B5] transition-colors duration-300 group">
                     <Link href="https://www.linkedin.com/in/arishah-khan-b606092b8/" aria-label="LinkedIn" className="flex items-center justify-center">

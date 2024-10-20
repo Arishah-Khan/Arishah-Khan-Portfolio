@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export default function HeroSec() {
   return (
-    <main id="home" className={`mt-24 scroll-mt-24 grid grid-rows-1 md:grid-cols-2 items-center bg-[#fafafa] ${roboto.className} py-8  animate-fadeIn overflow-hidden`}> {/* Use Roboto font */}
+    <main  className={`mt-24 scroll-mt-24 grid grid-rows-1 md:grid-cols-2 items-center bg-[#fafafa] ${roboto.className} py-8  animate-fadeIn overflow-hidden`}> {/* Use Roboto font */}
       {/* Text Section */}
       <div className="text-center space-y-3 md:space-y-4 order-2 md:order-1 animate-slideInRight md:animate-slideInLeft">
         <h3 className={`text-gray-700 font-semibold text-xl sm:text-2xl ${poppins.className} py-2 `}>
